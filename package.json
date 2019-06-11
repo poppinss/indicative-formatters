@@ -74,5 +74,9 @@
     "contents": ".",
     "anyBranch": false
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public",
+    "tag": "alpha"
+  }
 }
