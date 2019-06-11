@@ -1,6 +1,6 @@
 {
   "name": "indicative-formatters",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A collection of formatters used by Indicative",
   "scripts": {
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
