@@ -12,3 +12,4 @@
 */
 
 export { VanillaErrorNode, VanillaFormatter } from './src/VanillaFormatter'
+export { JsonApiErrorNode, JsonApiFormatter } from './src/JsonApiFormatter'

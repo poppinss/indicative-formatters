@@ -17,18 +17,23 @@ import { ParsedRule } from 'indicative-parser'
 /**
  * Shape of error node
  */
-export type VanillaErrorNode = {
-  message: string,
-  validation: string,
-  field: string,
+export type JsonApiErrorNode = {
+  source: {
+    pointer: string,
+  },
+  title: string,
+  detail: string,
+  meta: {
+    args: string[],
+  },
 }
 
 /**
  * Vanilla formatter is a plain formatter to collect validation
  * errors
  */
-export class VanillaFormatter implements ErrorFormatterContract<VanillaErrorNode> {
-  public errors: VanillaErrorNode[] = []
+export class JsonApiFormatter implements ErrorFormatterContract<JsonApiErrorNode> {
+  public errors: JsonApiErrorNode[] = []
 
   /**
    * Adds error to the list of existing errors
@@ -37,6 +42,7 @@ export class VanillaFormatter implements ErrorFormatterContract<VanillaErrorNode
     error: Error | string,
     field: string,
     rule: ParsedRule['name'],
+    args: ParsedRule['args'],
   ): void {
     let message = ''
     let validation = rule
@@ -48,14 +54,19 @@ export class VanillaFormatter implements ErrorFormatterContract<VanillaErrorNode
       message = error
     }
 
-    this.errors.push({ message, validation, field })
+    this.errors.push({
+      source: { pointer: field },
+      title: validation,
+      detail: message,
+      meta: { args },
+    })
   }
 
   /**
    * Returns an array of errors or `null` when there are no
    * errors
    */
-  public toJSON (): VanillaErrorNode[] | null {
-    return this.errors.length ? this.errors : null
+  public toJSON (): any {
+    return this.errors.length ? { errors: this.errors } : null
   }
 }

@@ -13,10 +13,10 @@ import * as test from 'japa'
 test.group('Vanilla formatter', () => {
   test('add error message as a string', (assert) => {
     const formatter = new VanillaFormatter()
-    formatter.addError('Invalid username', 'username', { name: 'required', args: [] })
+    formatter.addError('Invalid username', 'username', 'required')
 
     assert.deepEqual(formatter.toJSON(), [{
-      error: 'Invalid username',
+      message: 'Invalid username',
       field: 'username',
       validation: 'required',
     }])
@@ -24,10 +24,10 @@ test.group('Vanilla formatter', () => {
 
   test('add error object message as a string', (assert) => {
     const formatter = new VanillaFormatter()
-    formatter.addError(new Error('Blow up'), 'username', { name: 'required', args: [] })
+    formatter.addError(new Error('Blow up'), 'username', 'required')
 
     assert.deepEqual(formatter.toJSON(), [{
-      error: 'Blow up',
+      message: 'Blow up',
       field: 'username',
       validation: 'ENGINE_EXCEPTION',
     }])
