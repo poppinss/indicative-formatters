@@ -1,30 +1,37 @@
-[indicative-formatters](../README.md) > [indicative-formatters](../modules/indicative_formatters.md)
+> **[indicative-formatters](../README.md)**
+
+[Globals](../README.md) / [indicative-formatters](indicative_formatters.md) /
 
 # External module: indicative-formatters
 
-## Index
+### Index
 
-### Classes
+#### Classes
 
+* [JsonApiFormatter](../classes/indicative_formatters.jsonapiformatter.md)
 * [VanillaFormatter](../classes/indicative_formatters.vanillaformatter.md)
 
-### Type aliases
+#### Type aliases
 
+* [JsonApiErrorNode](indicative_formatters.md#jsonapierrornode)
 * [VanillaErrorNode](indicative_formatters.md#vanillaerrornode)
-
----
 
 ## Type aliases
 
-<a id="vanillaerrornode"></a>
+###  JsonApiErrorNode
 
-###  VanillaErrorNode
-
-**Ƭ VanillaErrorNode**: *`object`*
+Ƭ **JsonApiErrorNode**: *object*
 
 Shape of error node
 
-#### Type declaration
+#### Type declaration:
 
 ___
 
+###  VanillaErrorNode
+
+Ƭ **VanillaErrorNode**: *object*
+
+Shape of error node
+
+#### Type declaration:

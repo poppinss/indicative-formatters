@@ -1,11 +1,9 @@
+> **[indicative-formatters](README.md)**
 
-#  indicative-formatters
+[Globals](README.md) /
 
-## Index
+### Index
 
-### External modules
+#### External modules
 
 * [indicative-formatters](modules/indicative_formatters.md)
-
----
-
