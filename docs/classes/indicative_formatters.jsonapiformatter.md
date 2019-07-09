@@ -13,7 +13,7 @@ errors
 
 ## Implements
 
-* `ErrorFormatterContract<JsonApiErrorNode>`
+* `ErrorFormatterContract`
 
 ### Index
 
@@ -55,9 +55,9 @@ ___
 
 ###  toJSON
 
-▸ **toJSON**(): *any*
+▸ **toJSON**(): *object | null*
 
 Returns an array of errors or `null` when there are no
 errors
 
-**Returns:** *any*
+**Returns:** *object | null*

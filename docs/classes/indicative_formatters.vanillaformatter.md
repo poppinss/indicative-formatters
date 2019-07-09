@@ -13,7 +13,7 @@ errors
 
 ## Implements
 
-* `ErrorFormatterContract<VanillaErrorNode>`
+* `ErrorFormatterContract`
 
 ### Index
 
