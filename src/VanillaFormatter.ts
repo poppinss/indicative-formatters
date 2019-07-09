@@ -27,7 +27,7 @@ export type VanillaErrorNode = {
  * Vanilla formatter is a plain formatter to collect validation
  * errors
  */
-export class VanillaFormatter implements ErrorFormatterContract<VanillaErrorNode> {
+export class VanillaFormatter implements ErrorFormatterContract {
   public errors: VanillaErrorNode[] = []
 
   /**

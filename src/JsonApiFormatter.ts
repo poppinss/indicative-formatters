@@ -32,7 +32,7 @@ export type JsonApiErrorNode = {
  * Vanilla formatter is a plain formatter to collect validation
  * errors
  */
-export class JsonApiFormatter implements ErrorFormatterContract<JsonApiErrorNode> {
+export class JsonApiFormatter implements ErrorFormatterContract {
   public errors: JsonApiErrorNode[] = []
 
   /**
@@ -66,7 +66,7 @@ export class JsonApiFormatter implements ErrorFormatterContract<JsonApiErrorNode
    * Returns an array of errors or `null` when there are no
    * errors
    */
-  public toJSON (): any {
+  public toJSON (): { errors: JsonApiErrorNode[] } | null {
     return this.errors.length ? { errors: this.errors } : null
   }
 }
