@@ -1,6 +1,6 @@
 {
   "name": "indicative-formatters",
-  "version": "7.2.1",
+  "version": "7.2.2",
   "description": "A collection of formatters used by Indicative",
   "main": "build/index.js",
   "files": [
