@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 
+import test from 'japa'
 import { VanillaFormatter } from '../src/VanillaFormatter'
-import * as test from 'japa'
 
 test.group('Vanilla formatter', () => {
   test('add error message as a string', (assert) => {

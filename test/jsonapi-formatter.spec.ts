@@ -7,8 +7,9 @@
  * file that was distributed with this source code.
  */
 
+import test from 'japa'
+
 import { JsonApiFormatter } from '../src/JsonApiFormatter'
-import * as test from 'japa'
 
 test.group('JsonApi formatter', () => {
   test('add error message as a string', (assert) => {

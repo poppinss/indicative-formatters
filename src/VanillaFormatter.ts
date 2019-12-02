@@ -11,8 +11,8 @@
  * file that was distributed with this source code.
  */
 
-import { ErrorFormatterContract } from 'indicative-compiler'
 import { ParsedRule } from 'indicative-parser'
+import { ErrorFormatterContract } from 'indicative-compiler'
 
 /**
  * Shape of error node
