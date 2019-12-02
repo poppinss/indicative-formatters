@@ -1,9 +1,10 @@
-> **[indicative-formatters](README.md)**
+[indicative-formatters](README.md)
 
-[Globals](README.md) /
+# indicative-formatters
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
-* [indicative-formatters](modules/indicative_formatters.md)
+* ["JsonApiFormatter"](modules/_jsonapiformatter_.md)
+* ["VanillaFormatter"](modules/_vanillaformatter_.md)
